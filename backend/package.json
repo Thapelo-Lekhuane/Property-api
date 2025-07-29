@@ -1,0 +1,45 @@
+{
+  "name": "property-api",
+  "version": "1.0.0",
+  "description": "**CYC Acres** is a modern, user-friendly web application that allows people to browse bachelor rooms, view real-time availability, and book viewings — with a sleek, Instagram-style image layout. The platform is built with affordability, speed, and simplicity in mind.",
+  "main": "app.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest --detectOpenHandles --forceExit --verbose",
+    "test:integration": "cross-env NODE_ENV=test jest test/auth.integration.test.js --detectOpenHandles --forceExit --verbose --runInBand",
+    "test:watch": "cross-env NODE_ENV=test jest --watch",
+    "test:coverage": "cross-env NODE_ENV=test jest --coverage",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thapelo-Lekhuane/Property-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thapelo-Lekhuane/Property-api/issues"
+  },
+  "homepage": "https://github.com/Thapelo-Lekhuane/Property-api#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "firebase": "^12.0.0",
+    "firebase-admin": "^13.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.5",
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.5",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "cross-env": "^10.0.0",
+    "jest": "^30.0.5",
+    "mongodb-memory-server": "^10.1.4",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.4"
+  }
+}
